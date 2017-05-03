@@ -13,6 +13,13 @@
   padding-right: 0px;
 }
 
+.row.cover{
+  background-color: #ddd;
+}
+.cover .img-responsive{
+  margin: 0 auto;
+}
+
 .presentation{
   margin-top: 4%;
 }
@@ -5945,7 +5952,13 @@ button.list-group-item-danger.active:focus {
   padding: 0;
   overflow: hidden;
 }
-.embed-responsive .embed-responsive-item,
+
+@media (min-width: 1400px) {
+  .embed-responsive .embed-responsive-item{
+      max-height: 180px;
+    }
+}
+
 .embed-responsive iframe,
 .embed-responsive embed,
 .embed-responsive object,
