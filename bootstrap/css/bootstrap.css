@@ -5,6 +5,8 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+/*Custom CSS for all pages*/
+
 
 /* Custom CSS for homepage */
 
@@ -15,6 +17,7 @@
 
 .row.cover{
   background-color: #ddd;
+  margin-top:60px;
 }
 .cover .img-responsive{
   margin: 0 auto;
@@ -109,6 +112,77 @@ div.row.testimony{
     margin-top:20px;
 }
 
+
+/* Custom CSS for methode page */
+
+
+/* Custom CSS for price page */
+
+.price-private .li-header{
+  padding-top:20px;
+  padding-bottom: 10px;
+}
+
+.price h4{
+  
+}
+
+.price .price-group {
+  padding:30px 0;
+}
+.price span{
+  font-variant: small-caps;
+}
+
+
+/* Custom CSS for schedule page */
+.schedule{
+  padding-top: 30px;
+}
+
+.schedule th{
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+}
+
+.schedule td{
+  font-size: 16px;
+}
+
+/* Custom CSS for contact page */
+
+.row.title{
+  margin-top:60px;
+}
+
+@media (min-width: 768px){
+  .row.row-contact{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.title h3, .title h4{
+  text-align: center;
+}
+
+.coord p{
+  text-align:center;
+}
+
+.title p, .map p{
+  padding-top:40px;
+  padding-bottom:30px;
+}
+
+.contact.embed-responsive-custom{
+  width: 100%;
+}
+
+/* Custom CSS for footer */
+
 .footer .contact{
   padding-top:15px;
   background-color: #eee;
@@ -157,11 +231,6 @@ padding-right: 0px;
   padding-bottom: 4px;
   font-size: 11px;
   color: #FFF;
-}
-
-/* Custom CSS for contact page */
-.row.contact-page{
-  margin-top:60px;
 }
 
 
@@ -5970,7 +6039,7 @@ button.list-group-item-danger.active:focus {
 }
 
 @media (min-width: 1400px) {
-  .embed-responsive .embed-responsive-item{
+  .embed-responsive .embed-responsive-item .map-footer{
       max-height: 180px;
     }
 }
