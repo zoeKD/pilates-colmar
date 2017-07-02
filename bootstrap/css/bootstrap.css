@@ -17,7 +17,7 @@
 
 .row.cover{
   background-color: #ddd;
-  margin-top:60px;
+  margin-top:50px;
 }
 .cover .img-responsive{
   margin: 0 auto;
@@ -71,7 +71,7 @@
 }
 
 .data .glyphicon{
-  color: #00cc99;
+  color: #8b668b;
   padding-right: 5px;
 }
 
@@ -113,33 +113,121 @@ div.row.testimony{
 }
 
 
-/* Custom CSS for methode page */
+/* Custom CSS for method page */
 
+.pilates h4{
+  padding-bottom: 20px;
+}
+
+
+.history, .how-to {
+  padding-top:40px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.benefits{
+  background-color: #eee;
+  padding-top:40px;
+  padding-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.benefits h4{
+  text-align: center;
+}
+
+.benefits p{
+  padding: 20px 0;
+}
+
+.how-to li{
+  padding-bottom: 20px;
+}
+
+
+.elements h4, .elements p{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.elements .grid{
+  margin-bottom: 20px;
+}
+
+.elements .caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    font-family: 'Oswald';
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+/*  height: 100%;
+  width: 100%;*/
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #272033;
+}
+
+.image-grid:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transform: translate(-30%, -30%);
+  -ms-transform: translate(-30%, -30%);
+}
 
 /* Custom CSS for price page */
 
-.price-private .li-header{
+.subtitle{
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  padding-top:40px;
+  padding-bottom: 20px;
+}
+
+li strong{
+  color: #8b668b;
+}
+
+.li-header{
   padding-top:20px;
-  padding-bottom: 10px;
-}
-
-.price h4{
-  
-}
-
-.price .price-group {
-  padding:30px 0;
-}
-.price span{
-  font-variant: small-caps;
 }
 
 
 /* Custom CSS for schedule page */
+
 .schedule{
   padding-top: 30px;
 }
 
+.delphine h3{
+  text-align: center;
+}
 .schedule th{
   font-family: 'Oswald';
   text-transform: uppercase;
@@ -161,21 +249,24 @@ div.row.testimony{
   .row.row-contact{
     padding-left: 100px;
     padding-right: 100px;
+    margin-top:60px;
   }
 }
 
 .title h3, .title h4{
   text-align: center;
+  color : #8b668b;
 }
 
-.coord p{
-  text-align:center;
-}
-
-.title p, .map p{
+.intro p, .map p{
   padding-top:40px;
   padding-bottom:30px;
 }
+
+.coord p{
+  text-align: center;
+}
+
 
 .contact.embed-responsive-custom{
   width: 100%;
@@ -1540,6 +1631,7 @@ p {
 small,
 .small {
   font-size: 85%;
+  color:#777;
 }
 mark,
 .mark {
