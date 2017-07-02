@@ -5,12 +5,22 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+/*Custom CSS for all pages*/
+
 
 /* Custom CSS for homepage */
 
 .container-fluid .cover .col-xs-12, .container-fluid .methode .col-xs-12 {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.row.cover{
+  background-color: #ddd;
+  margin-top:60px;
+}
+.cover .img-responsive{
+  margin: 0 auto;
 }
 
 .presentation{
@@ -56,6 +66,10 @@
   text-align: center;
 }
 
+.data p{
+  font-size: 15px;
+}
+
 .data .glyphicon{
   color: #00cc99;
   padding-right: 5px;
@@ -63,11 +77,16 @@
 
 .methode{
   margin-top:4%;
+  background-color: #000;
 }
 
 .methode.col-xs-12{
   padding-left:0px;
   padding-right:0px;
+}
+
+.methode .img-responsive{
+  margin:0 auto;
 }
 
 .courses{
@@ -80,12 +99,89 @@
 }
 
 .testimony{
-  padding-top:5%;
+  padding:5% 0;
+  background-color:#272033;
 }
 
-div.row.footer{
+.testimony p {
+  color:#eee;
+  text-align: center;
+}
+
+div.row.testimony{
     margin-top:20px;
 }
+
+
+/* Custom CSS for methode page */
+
+
+/* Custom CSS for price page */
+
+.price-private .li-header{
+  padding-top:20px;
+  padding-bottom: 10px;
+}
+
+.price h4{
+  
+}
+
+.price .price-group {
+  padding:30px 0;
+}
+.price span{
+  font-variant: small-caps;
+}
+
+
+/* Custom CSS for schedule page */
+.schedule{
+  padding-top: 30px;
+}
+
+.schedule th{
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+}
+
+.schedule td{
+  font-size: 16px;
+}
+
+/* Custom CSS for contact page */
+
+.row.title{
+  margin-top:60px;
+}
+
+@media (min-width: 768px){
+  .row.row-contact{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.title h3, .title h4{
+  text-align: center;
+}
+
+.coord p{
+  text-align:center;
+}
+
+.title p, .map p{
+  padding-top:40px;
+  padding-bottom:30px;
+}
+
+.contact.embed-responsive-custom{
+  width: 100%;
+}
+
+/* Custom CSS for footer */
 
 .footer .contact{
   padding-top:15px;
@@ -135,11 +231,6 @@ padding-right: 0px;
   padding-bottom: 4px;
   font-size: 11px;
   color: #FFF;
-}
-
-/* Custom CSS for contact page */
-.row.contact-page{
-  margin-top:60px;
 }
 
 
@@ -1316,7 +1407,8 @@ h2,
 h3,
 
 h4 {
-  font-family: 'PT Sans'
+  font-family: 'Oswald';
+  text-transform: uppercase;
 }
 
 ,
@@ -4418,7 +4510,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-width: 1px 0 0;
 }
 .navbar-brand {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
   float: left;
   height: 50px;
   padding: 15px 15px;
@@ -5945,7 +6037,13 @@ button.list-group-item-danger.active:focus {
   padding: 0;
   overflow: hidden;
 }
-.embed-responsive .embed-responsive-item,
+
+@media (min-width: 1400px) {
+  .embed-responsive .embed-responsive-item .map-footer{
+      max-height: 180px;
+    }
+}
+
 .embed-responsive iframe,
 .embed-responsive embed,
 .embed-responsive object,
