@@ -10,6 +10,9 @@
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
+    <!-- Blueimp gallery -->
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+
     <!-- Google fonts -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
@@ -58,68 +61,88 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-        <!-- Price content --->
+        <!-- Teachers content --->
       <div class="container">
         <div class="row title">
-          <div class="col-xs-12 title price">
-            <h1>Tarifs des cours</h1>
-            <p class="subtitle">Cours collectif de 4 à 11 personnes : <small>avec petit matériel (Swiss Ball, cercles, rouleaux...)</small></p>
+          <div class="col-xs-12 title teachers">
+            <h1>Les professeurs du studio</h1>
           </div>
-          <div class="col-xs-12 col-sm-6">
-              <ul>
-                <li><strong>20 €</strong> à l'unité</li>
-                <li><strong>35 €</strong> les 2 cours par semaine</li>
-              </ul>
+        </div>
+        <div class="row sophie">
+          <div class="col-xs-12 col-sm-6 col-sm-push-6">
+            <h4>Sophie Cadé</h4>
+            <p class="coord">
+              <small>Professeur de Danse Classique Diplômée d’Etat<br />
+              Diplômée du Pilates institue UK<br />
+              <a href="tel:0609172144">06 09 17 21 44</a> ou <a href="mailto:sophiesomapilates@gmail.com">sophiesomapilates@gmail.com</a></small><br />
+            </p>
+            <p class="bio">
+              Pratiquant la danse depuis sa plus jeune enfance, Sophie a enseigné pendant 15 ans la danse classique avant de découvrir le Pilates. <br />
+              Précurseuse en Alsace, elle enseigne d'abord pendant 4 ans la méthode Pilates au CERAC avant de fonder son propre studio en Avril 2004.
+            </p>
           </div>
-          <div class="col-xs-12 col-sm-6">
-              <ul>
-                <li><strong>180 €</strong> la carte de 10 cours</li>
-                <li><strong>330 €</strong> la carte de 20 cours</li>
-                <li><strong>450 €</strong> la carte de 30 cours</li>
-              </ul>
+          <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+            <img src="img\sophie-cade.jpg" class="img-responsive sophie-pic" alt="Photo de Sophie Cadé">
           </div>
-          <div class="col-xs-12 title price">
-            <p class="subtitle">Sur rendez-vous : <small>cours sur appareils Reformer, Cadillac, Wunda Chair...</small></p>
+        </div>
+        <div class="row delphine">
+                    <div class="col-xs-12 col-sm-6">
+            <h4>Delphine Ostermann</h4>
+            <p class="coord">
+              <small>Diplômée en matwork 1 (pilates débutant) chez LF'Pilates et formée en plusieurs spécialités<br />
+              <a href="tel:0760014362">07 60 01 43 62</a> ou <a href="mailto:del.fred@hotmail.fr">del.fred@hotmail.fr</a></small><br />
+            </p>
+            <p class="bio">
+              C'est après sa deuxième grossesse que Delphine découvre le Pilates.
+              Conquise par cette discipline, elle décide de s'y former et se spécialise dans les cours adaptés aux femmes enceintes, aux seniors ainsi qu'à toute personne en soin post-thérapeutique.</p>
           </div>
-          <div class="col-xs-12 col-sm-6">
-                <ul>
-                  <li class="li-header">En solo :</li>
-                    <ul>
-                      <li><strong>60 €</strong> à l'unité</li>
-                      <li><strong>275 €</strong> la carte de 5 cours</li>
-                      <li><strong>535 €</strong> la carte de 10 cours</li>
-                    </ul>
-                  <li class="li-header">En duo :</li>
-                    <ul>
-                      <li><strong>37 €</strong> / personne</li>
-                      <li><strong>185 €</strong> la carte de 5 cours</li>
-                      <li><strong>350 €</strong> la carte de 10 cours</li>
-                    </ul>
-                  </ul>
-          </div>
-          <div class="col-xs-12 col-sm-6">
-                  <ul>
-                  <li class="li-header">En trio :</li>
-                    <ul>
-                      <li><strong>25 €</strong> / personne</li>
-                      <li><strong>240 €</strong> la carte de 10 cours</li>
-                      <br/>
-                    </ul>
-                  <li class="li-header">Cours d'initiation (1h) :</li>
-                    <ul>
-                      <li><strong>15 €</strong> en groupe de 3 personnes</li>
-                      <li><strong>17 €</strong> à 2</li>
-                      <li><strong>30 €</strong> en solo</li>
-                    </ul>
-                </ul>
+          <div class="col-xs-12 col-sm-4 col-sm-push-2">
+            <img src="img\delphine-ostermann.webp" class="img-responsive img-rounded delphine-pic" alt="Photo de Delphine Ostermann">
           </div>
         </div>
       </div>
 
-      <div class="container-fluid">
-        <div class="row methode price">
+      <div class="container">
+        <div class="row studio-gallery">
           <div class="col-xs-12">
-            <img src="img/tapis-pilates.jpg" class="img-responsive" alt="tapis de pilates au mur">
+
+            <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+            <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+                <div class="slides"></div>
+                <h3 class="title"></h3>
+                <a class="prev">‹</a>
+                <a class="next">›</a>
+                <a class="close">×</a>
+                <a class="play-pause"></a>
+                <ol class="indicator"></ol>
+            </div>
+
+            <div id="links">
+              <a href="img\urban-pilates.jpg" title="Banana">
+                <img src="img\grid-1.jpg" alt="Banana">
+              </a>
+              <a href="img\urban-pilates.jpg" title="Banana">
+                <img src="img\grid-1.jpg" alt="Banana">
+              </a>
+              <a href="img\grid-1.jpg" title="Banana">
+                <img src="img\grid-1.jpg" alt="Banana">
+              </a>
+              <a href="img\urban-pilates.jpg" title="Banana">
+                <img src="img\grid-1.jpg" alt="Banana">
+              </a>
+            </div>
+
+            <script>
+            document.getElementById('links').onclick = function (event) {
+              event = event || window.event;
+              var target = event.target || event.srcElement,
+                  link = target.src ? target.parentNode : target,
+                  options = {index: link, event: event},
+                  links = this.getElementsByTagName('a');
+              blueimp.Gallery(links, options);
+            };
+            </script>
+
           </div>
         </div>
       </div>
@@ -167,5 +190,8 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- Script for blueimp-gallery --->
+      <script src="js/blueimp-gallery.min.js"></script>
+
     </body>
   </html>
