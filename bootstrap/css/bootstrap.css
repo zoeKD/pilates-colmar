@@ -189,6 +189,12 @@ div.row.testimony{
     text-shadow: 1px 1px #000;
 }
 
+@media (max-width:768px){
+  .elements .caption {
+      width: 320px;
+    }
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -261,6 +267,7 @@ div.row.testimony{
 
 .studio-gallery img{
   width: 260px;
+  margin-top: 5px;
 }
 
 @media (min-width:395px ) {
@@ -326,6 +333,18 @@ li strong{
 
 .schedule td{
   font-size: 16px;
+}
+
+.schedule .empty td{
+  padding-bottom: 29px;
+}
+
+.schedule p{
+  font-weight: bold;
+}
+
+.schedule p:nth-child(2){
+  color:  #e00f53;
 }
 
 /* Custom CSS for contact page */
